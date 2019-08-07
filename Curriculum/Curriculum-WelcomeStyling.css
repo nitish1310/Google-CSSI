@@ -1,0 +1,22 @@
+h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+.Intro {
+  font-size: 20px;
+  text-align: center;
+  border-style: solid;
+  margin: 10px;
+  background: #FFFFFF;
+}
+
+.IntroSection{
+    border-style: solid;
+    margin: 10px;
+    background: #F5F5F5;
+}
+
+ul{
+  text-align: left;
+}
