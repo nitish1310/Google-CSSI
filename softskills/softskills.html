@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="softSkills.css">
+      <link rel="stylesheet" href="../NavBarStyling.css">
+    <title>Soft Skills</title>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="../NavBar.html">
+        <img src="https://gatewayimpact.org/sites/default/files/styles/opportunity_image__lg/public/opportunities/CSSI_0.jpg?h=8f144495&itok=8brpbpnK" alt="logo"
+        width="90" height="100">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../Curriculum/Curriculum-Welcome.html">Curriculum</a></li>
+            <li><a href="softskills/softskills.html">Soft Skills</a></li>
+            <li><a href="#">Proects</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h1>Soft Skills</h1>
+    <div class="main">
+
+
+          <button class="btn">Life Path's Activity</button>
+
+            <div class="panel">
+              <div class="slideContainer">
+                <div class="slide">
+                  <img src="./images/lifePaths/0006.jpg">
+                </div>
+
+                <div class="slide">
+                  <img src="./images/lifePaths/0007.jpg">
+                </div>
+
+                <div class="slide">
+                  <img src="./images/lifePaths/0008.jpg">
+                </div>
+
+                <div class="slide">
+                  <img src="./images/lifePaths/0009.jpg">
+                </div>
+
+                <div class="slide">
+                  <img src="./images/lifePaths/0010.jpg">
+                </div>
+
+              </div>
+            </div>
+
+          <button class="btn">Community Building</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+
+          <button class="btn">Imposter Syndrome</button>
+            <div class="panel">
+              <div class="slideContainer">
+                <div class="slide">
+                  <img src="./images/imposterSyndrome/0001.jpg">
+                </div>
+                <div class="slide">
+                  <img src="./images/imposterSyndrome/0002.jpg">
+                </div>
+                <div class="slide">
+                  <img src="./images/imposterSyndrome/0003.jpg">
+                </div>
+                <div class="slide">
+                  <img src="./images/imposterSyndrome/0004.jpg">
+                </div>
+                <div class="slide">
+                  <img src="./images/imposterSyndrome/0005.jpg">
+                </div>
+
+              </div>
+            </div>
+
+          <button class="btn">Resume Writing</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+
+          <button class="btn">Mock Interview</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+
+          <button class="btn">Meet Alumni</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+
+          <button class="btn">Work with your recruiter</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+
+          <button class="btn">Moon Landing</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+
+          <button class="btn">Presenting with Confidence</button>
+            <div class="panel">
+              <video width="600" height="600" controls>
+                <source src="./images/pwConfidence/001.mp4" type="video/mp4">
+            </div>
+
+          <button class="btn">Resume Workshop</button>
+            <div class="panel">
+              <p>paragraph</p>
+            </div>
+    </div>
+  </body>
+  <script>
+  var x=document.getElementsByClassName("btn");
+  var i;
+  var j;
+  var slides;
+  var slideIndex=0;
+ showSlides();
+  for(i=0;i<x.length;i++){
+    x[i].addEventListener("click",function(){
+
+      this.classList.toggle("active");
+
+      var panel=this.nextElementSibling;
+      if(panel.style.display==="block"){
+        panel.style.display="none";
+      }else{
+        panel.style.display="block";
+      }
+    });
+  }
+
+  function showSlides(n) {
+    var j;
+    var slides = document.getElementsByClassName("slide");
+    for(j=0;j<slides.length;j++){
+      slides[j].style.display="none";
+        }
+    slideIndex++;
+
+    slides[slideIndex-1].style.display = "block";
+
+    setTimeout(showSlides,2000);
+  }
+
+  </script>
+</html>
