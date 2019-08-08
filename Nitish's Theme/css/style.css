@@ -874,3 +874,7 @@ Responsive media queries
   transform: scale(1);
   background-color: rgba(0,0,0,0.4);
 }
+
+.info{
+	background-color: #F5F5F5;
+}
