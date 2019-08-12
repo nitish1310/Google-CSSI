@@ -49,36 +49,72 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><br>HTML Overview</h1>
+            <h1><br>Scripting Language Overview</h1>
 
             <hr class="bottom-line">
           </div>
 
         <div class="info">
 
+          <h2>What Are Data Structures?</h2>
 
-          <h2>What Is CSS?</h2>
+          <p>Data structures provide a means to manage large amounts of data
+            efficiently. Data structures represent a collection of related data.
+            Different kinds of data structures are suited to different applications
+            and situations. Two types of structures are:</p>
 
-      <p>CSS is short for Cascading Style Sheets. It’s code that we use to: <br><br></p>
+            <ul>
+              <li>Arrays</li>
+              <li>Objects</li>
+            </ul>
 
-      <ul>
-        <li>describe how HTML elements are to be laid out on a web page.<br><br></li>
-        <li>style HTML elements including colors, sizes, and fonts. <br><br></li>
-      </ul>
+            <h2>When Do We Use Data Structures?</h2>
 
-      <h2>When Do We Use CSS?</h2>
+            <p>For anything more complicated than a single word or number, a
+              data structure should be used. Note that data structures can store
+              numbers, words, booleans, or a combination. <br><br>
+              An array can be used for keeping track of a list of data (numbers,
+              strings, booleans, other arrays, or a mix). An array holds the elements
+              in a specific order and the data can be accessed by referencing the
+              index of the storage spot (starting at 0).  </p>
 
-      <p>Every web page that you see on the Internet that has any kind of color
-        or style has that code written using CSS. Font type, size, background
-        color, shadows - these are all created with CSS..<br><br></p>
-         <p>If we think of our web page as a human body, CSS is the skin and
-           clothing that we add to our HTML content (which is the skeleton).<br><br></p>
+            <ol>
+              <li>let seatingOrder = ["Bruce", "Peter", "Natasha", "Tony", "Steve", "Carol",</li>
+              <li>  "Vincent", "Nick"];</li>
+              <br>
+              <li>// To access the name in the fourth position, reference the storage index</li>
+              <li>seatingOrder[3];</li>
+            </ol>
 
-      <h2>Parts of a CSS Rule Set</h2>
+            <p>If the data structure is more complicated or represents something,
+              for example, a car, an object would be a good data structure for
+              keeping track of the number of doors, color, transmission, etc.
+              With an object, values can always be efficiently inserted and removed
+              without relocating other values. The values can be referenced by
+              referencing the data structure’s name and the associated key.</p>
 
-      <img src="https://cssicurriculum.withgoogle.com/html-css/img/rZtwA6M.png" alt="...">
+              <ol>
+                <li>let myCar = {</li>
+                <li> wheels: 4,</li>
+                <li>doors: 5,</li>
+                <li>color: "red",</li>
+                <li>transmission: "automatic",</li>
+                <li>needAnOilChange: false</li>
+                <li>};</li>
+                <br>
+                <li>// To access the color of the car, reference the key "color"</li>
+                <li>myCar["color"];</li>
+              </ol>
 
-    </div>
+              <h2>Data Structures In Action</h2>
+
+              <h3>Parts of Arrays and Objects (written in JavaScript)</h3>
+
+              <img src="https://cssicurriculum.withgoogle.com/javaScript/img/AXIyzxJ.png" alt="...">
+
+
+
+        </div>
 
 
         </div>

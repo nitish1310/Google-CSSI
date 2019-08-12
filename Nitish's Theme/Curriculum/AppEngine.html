@@ -49,36 +49,59 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><br>HTML Overview</h1>
+            <h1><br>App Engine</h1>
 
             <hr class="bottom-line">
           </div>
 
         <div class="info">
 
+          <h2>Framework Download: </h2>
+          <a href="https://cloud.google.com/appengine/docs/standard/python/quickstart">Download AppEngine</a>
 
-          <h2>What Is CSS?</h2>
+          <br><br>
 
-      <p>CSS is short for Cascading Style Sheets. It’s code that we use to: <br><br></p>
+          <h2>Base Files for Project:</h2>
+          <ul>
+            <li>-app.yaml: (configuration file. Contains app configuration parameters AND
+	             routes which link urls to behavior defined in main.py
+            </li>
+            <li>-main.py: contains handler definitions: implementation of
+              what code runs when a url is accessed.
+            </li>
+          </ul>
 
-      <ul>
-        <li>describe how HTML elements are to be laid out on a web page.<br><br></li>
-        <li>style HTML elements including colors, sizes, and fonts. <br><br></li>
-      </ul>
+          <h2>Example app.yaml:</h2>
 
-      <h2>When Do We Use CSS?</h2>
+          <ol>
+            <li>#app.yaml</li>
+            <li>runtime: python27</li>
+            <li>api_version: 1</li>
+            <li>threadsafe: true</li>
+            <br>
+            <li>handlers:</li>
+            <li>- url: /.*</li>
+            <li>  script: main.app</li>
+            <br>
+            <li>libraries:</li>
+            <li>- name: jinja2</li>
+            <li>  version: latest</li>
+          </ol>
 
-      <p>Every web page that you see on the Internet that has any kind of color
-        or style has that code written using CSS. Font type, size, background
-        color, shadows - these are all created with CSS..<br><br></p>
-         <p>If we think of our web page as a human body, CSS is the skin and
-           clothing that we add to our HTML content (which is the skeleton).<br><br></p>
+          <h2>Example main.py:</h2>
 
-      <h2>Parts of a CSS Rule Set</h2>
+          <p>import webapp2 <br>
+          class MainPageHandler(webapp2.RequestHandler): <br>
+          def get(self): #for a get request <br>
+          self.response.headers['Content-Type'] = 'text/plain'<br>
+          self.response.write('Hello, World!') #the response <br><br>
+          app = webapp2.WSGIApplication([<br>
+          ('/', MainPageHandler) #this maps the root url to the Main Page Handler <br>
+          ], debug=True)
+        </p>
 
-      <img src="https://cssicurriculum.withgoogle.com/html-css/img/rZtwA6M.png" alt="...">
-
-    </div>
+        <h2>LAUNCH THE WHOLE THING: </h2>
+        <h3>dev_appserver.py app.yaml</h3>
 
 
         </div>
@@ -88,7 +111,7 @@
     <footer id="footer" class="footer">
       <div class="container text-center">
 
-  
+
   <img src="../img/UB-logo.png"  height="80px"/>
         <!-- End newsletter-form -->
         <ul class="social-links">
