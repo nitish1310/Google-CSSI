@@ -1,0 +1,82 @@
+.main-Content{
+
+  justify-content:center;
+  }
+  .btn{
+  width:50%;
+  transition:0.4s;
+  align-self: center;
+  color:black;
+  background-color:#F5F5F5;
+  height:50px;
+  text-align: center;
+  font-size:20px;
+  margin-bottom:5px;
+}
+.active{
+  background-color: white;
+}
+.panel{
+  display:none;
+  overflow:hidden;
+  align-items:center;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: blue;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+.slide {
+display: none;
+align-content:"center";
+}
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+
+}
+img{
+max-width:800px;
+max-height:800px;
+
+}
+h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+.Intro {
+  font-size: 20px;
+  text-align: center;
+  border-style: solid;
+  margin: 10px;
+  background: #FFFFFF;
+}
+
+.IntroSection{
+    border-style: solid;
+    margin: 10px;
+    background: #F5F5F5;
+}
+
+ul{
+  text-align: left;
+}
